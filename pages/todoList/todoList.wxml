@@ -1,0 +1,26 @@
+<view class="header">
+  <text class="add">+</text>
+  <input type="text" placeholder='Anything here...' class="input" bindconfirm='addToDo' value="{{todoName}}"></input>
+</view>
+<view wx:if="{{list.length>0}}">
+  <view class="list">
+    <view class="list-item" wx:for="{{list}}" wx:key="index">
+    <view bindtap='select' data-id="{{item.id}}">
+      <icon type="circle" class="icon" hidden="{{item.isSelect}}" ></icon>
+      <icon type="success" class="icon" hidden="{{item.isSelect!=true}}"></icon>
+      </view>
+        <text class="centent" >{{item.name}}</text>
+        <icon type="clear" bindtap="del" data-id="{{item.id}}"></icon>
+    </view>
+  </view>
+  <view class="footer">
+    <text bindtap='checkAll'>Toggle all</text>
+    <text>{{num}} items left</text>
+    <text bindtap='clear' hidden="{{list.length===num}}">clear completed</text>
+  </view>
+</view>
+<view wx:else  class="empty">
+  <view>Congratulations</view>
+  <view class="content">There's no more work left.</view>
+</view>
+

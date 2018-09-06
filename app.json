@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/todoList/todoList",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"black",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "todoList",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "todoList",
+  "backgroundColor": "#ccc",
+  "backgroundTextStyle": "light"
+}
